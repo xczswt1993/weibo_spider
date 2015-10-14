@@ -92,15 +92,15 @@ def connectToDatabase(firstInfo):
 
 def impRe(target):
     print target,"......"
-    pattern = u'昵称:([^\|]*)|'
+    pattern = u'昵称\|\:(.*?)\|'
     abc = re.match(pattern,target)
     name = abc.group(1)
 
-    pattern = u'性别:([^\|])'
+    pattern = u'性别\|\:(.*?)\|'
     abc = re.search(pattern,target)
     sex = abc.group(1)
 
-    pattern = u'地区:([^\|]*)'
+    pattern = u'地区\|\:(.*?)\|'
     abc = re.search(pattern,target)
     hometown = abc.group(1)
 
