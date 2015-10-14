@@ -5,7 +5,7 @@ CREATE TABLE `NAME` (
   `ID` int(10) unsigned NOT NULL AUTO_INCREMENT,
   `USERNAME` varchar(100) COLLATE utf8_unicode_ci NOT NULL,
   `LAST_VISIT` int(10) unsigned DEFAULT NULL,
-  `LINK_ID` int(10) unsigned NOT NULL,
+  `LINK_ID` bigint(11) unsigned NOT NULL,
   `ADD_TIME` int(10) unsigned NOT NULL,
   `SEX` varchar(100) COLLATE utf8_unicode_ci NOT NULL,
   `HOMETOWN` varchar(100) COLLATE utf8_unicode_ci NOT NULL,
